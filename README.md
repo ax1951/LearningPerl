@@ -1,2 +1,1 @@
-# test
-My first repository on GitHub
+# Study Notes of Learning Perl
