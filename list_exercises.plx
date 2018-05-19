@@ -22,7 +22,7 @@ foreach (@numbers)
 		print "your input number $_ doesn't fall within 1-7\n";
 		next;
 	}
-	print "@names[$_]\n";
+	print "$names[$_]\n";
 }
 
 #exercise 3
