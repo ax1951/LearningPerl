@@ -5,10 +5,17 @@ use Math::Trig;
 use utf8;
 
 #exercise 1
+=for comment
 print "please input some lines:\n";
 chomp(@lines = <STDIN>);
 @lines = reverse @lines;
 print "\@lines = @lines\n";
+=cut
+
+# A simple and better way
+print "please input some lines:\n";
+print reverse <STDIN>;
+
 
 #exercise 2
 print "\n\n";
@@ -26,3 +33,4 @@ foreach (@numbers)
 }
 
 #exercise 3
+print sort <STDIN>;
