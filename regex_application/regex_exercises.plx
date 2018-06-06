@@ -39,7 +39,7 @@ close $out;
 =cut
 
 # exercise 3
-=pod
+#=pod
 if (@ARGV != 1) {
 	die "usage: $0 regex_ex3.txt";
 }
@@ -50,17 +50,19 @@ $output_filename =~ s/(.+)[.].+/$1.out/;
 open (my $in, "<", $input_filename) or die "cannot open $input_filename: $!";
 open (my $out, ">", $output_filename) or die "cannot open $output_filename with write permission! $!";
 while (<$in>) {
-	s/fred/Wi2ma/ig;
-	s/wilma/Fr3d/ig;
-	s/Wi2ma/Wilma/g;
-	s/Fr3d/Fred/g;
-	print $out $_;
+	chomp;
+	s/fred/\n/ig;
+	s/wilma/Fred/ig;
+	s/\n/Wilma/g;
+	print $out "$_\n";
 }
 close $in;
 close $out;
-=cut
+#=cut
 
 # exercise 4
+# usage: ./regex_application/regex_exercises.plx $(git ls-files | grep "plx")
+=pod
 my $copyright = "# Copyright (C) 2018 by Yours Truly\n# Author: kotomi\n\n";
 
 $^I = "";
@@ -69,4 +71,4 @@ while (<>) {
 	s%(^[#]!/usr/local/bin/perl.*\n)%$1$copyright%;
 	print;
 }
-
+=cut
