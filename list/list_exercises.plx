@@ -1,4 +1,7 @@
 #!/usr/local/bin/perl 
+# Copyright (C) 2018 by Yours Truly
+# Author: kotomi
+
 #use diagnostics;
 #use warnings;
 use Math::Trig;

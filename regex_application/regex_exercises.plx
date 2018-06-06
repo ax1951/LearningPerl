@@ -1,4 +1,7 @@
 #!/usr/local/bin/perl 
+# Copyright (C) 2018 by Yours Truly
+# Author: kotomi
+
 #use diagnostics;
 #use warnings;
 use Math::Trig;
@@ -58,4 +61,12 @@ close $out;
 =cut
 
 # exercise 4
+my $copyright = "# Copyright (C) 2018 by Yours Truly\n# Author: kotomi\n\n";
+
+$^I = "";
+
+while (<>) {
+	s%(^[#]!/usr/local/bin/perl.*\n)%$1$copyright%;
+	print;
+}
 
