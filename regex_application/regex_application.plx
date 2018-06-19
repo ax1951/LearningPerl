@@ -2,10 +2,6 @@
 # Copyright (C) 2018 by Yours Truly
 # Author: kotomi
 
-# Copyright (C) 2018 by Yours Truly
-# Author: kotomi
-
-
 use utf8;
 use strict;
 use warnings;

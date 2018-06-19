@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w 
+#!/usr/local/bin/perl -w 
 use strict; 
 
 # usage: ./update_many_files.plx fred*.dat
