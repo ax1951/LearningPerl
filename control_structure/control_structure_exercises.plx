@@ -11,7 +11,7 @@ use List::Util qw[max min];
 # exercise 1
 #=pod
 my $magic_number = int(1 + rand 100);
-#print "Don't tell anyone, but the secrect number is $secret.\n";
+#print "Don't tell anyone, but the secrect number is $magic_number.\n";
 
 say "Please guess a number between 1 and 100(type 'quit', 'exit' or 'ENTER' to quit):";
 
